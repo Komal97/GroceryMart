@@ -43,7 +43,7 @@ function checkUser(json,key){
                } 
             }       
     });
-    ajaxcall.ajax(printMainMenu,"http://localhost:3000/menu.json","mainmenu");
+    ajaxcall.ajax(printMainMenu,"http://localhost:3000/json/menu.json","mainmenu");
 }
 
  function checkpassword(){
@@ -110,8 +110,8 @@ function checkuser(json,key){
     if(flag){
         document.getElementById("logindiv").style.display="none";
         document.getElementById("homediv").style.display="block";
-        ajaxcall.ajax(printMainMenu,"http://localhost:3000/menu.json","mainmenu");
-        ajaxcall.ajax(printSubMenu,"http://localhost:3000/Vegetable.json","submenu");
+        ajaxcall.ajax(printMainMenu,"http://localhost:3000/json/menu.json","mainmenu");
+        ajaxcall.ajax(printSubMenu,"http://localhost:3000/json/Vegetable.json","submenu");
     }
     else{
         document.querySelector("#incorrectpass").innerHTML="Invalid username or password !!";
@@ -133,9 +133,9 @@ function printMainMenu(json,key){
 
 function callSubMenu(event){
     var btn=event.srcElement;
-    btn.classList.toggle("clicked");
+    // btn.classList.toggle("clicked");
     var id=this.getAttribute("menu-id");
-    ajaxcall.ajax(printSubMenu,"http://localhost:3000/"+id+".json","submenu");
+    ajaxcall.ajax(printSubMenu,"http://localhost:3000/json/"+id+".json","submenu");
 }
 //============================================ ITEMS =================================================
 
@@ -187,15 +187,6 @@ function printSubMenu(json,key){
         liquantity.innerHTML= "Quantity : "+currentObject.quantity;
         liquantity.className="quantity";
         ul.appendChild(liquantity);
-
-        // let litxtquantity=document.createElement("li");
-        // let txtquantity=document.createElement("input");
-        // ul.appendChild(litxtquantity);
-        // txtquantity.placeholder="Enter quantity";
-        // txtquantity.className="txtquantity";
-        // txtquantity.type="number";
-        // txtquantity.min="1";
-        // litxtquantity.appendChild(txtquantity);
        
         let btnaddtocart=document.createElement("button");
         btnaddtocart.innerHTML="Add To Cart";
