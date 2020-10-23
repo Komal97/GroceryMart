@@ -1,25 +1,25 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
 }
 
-header{
-   height: 100px;
-   background-color: orange;
-   position: fixed;
-   width: 100%;
+header {
+    height: 100px;
+    background-color: orange;
+    position: fixed;
+    width: 100%;
 }
 
-main{
+main {
     padding-top: 100px;
 }
 
-header img{
+header img {
     width: 100px;
     height: 100px;
     float: right;
     position: relative;
-    margin-right: 15px;   
+    margin-right: 15px;
 }
 
 .notification {
@@ -37,20 +37,21 @@ header img{
     z-index: 1;
 }
 
-header h3{
+header h3 {
     font-size: 250%;
     display: inline-block;
     text-align: center;
-    color:white;
+    color: white;
     text-shadow: 3px 3px 5px rgb(73, 71, 71);
     font-family: cursive;
     position: relative;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     line-height: 50px;
 }
- 
-#logindiv,#registerdiv{
+
+#logindiv,
+#registerdiv {
     padding: 30px;
     background-color: rgb(228, 222, 222);
     color: black;
@@ -63,38 +64,41 @@ header h3{
     display: block;
 }
 
-#registerdiv{
+#registerdiv {
     width: 400px;
-    display:none;
+    display: none;
     margin-bottom: 40px;
 }
 
-#homediv{
+#homediv {
     display: none;
 }
 
-
-#innerdiv{ 
-   width: 500px;
-   margin: 0px auto;
+#innerdiv {
+    width: 500px;
+    margin: 0px auto;
 }
 
-#mainmenu{
-    background-color: rgb(236, 236, 203);  
+#mainmenu {
+    background-color: rgb(236, 236, 203);
     position: fixed;
     width: 100%;
-  }
-  
-#submenu{
+}
+
+#submenu {
     padding-top: 50px;
 }
 
-#registerdiv div input,#registerdiv div label,#registerdiv div textarea{
+#registerdiv div input,
+#registerdiv div label,
+#registerdiv div textarea {
     width: 300px;
-    margin-left:15px; 
+    margin-left: 15px;
 }
 
-label ,input ,textarea{
+label,
+input,
+textarea {
     padding: 2px;
     font-size: 18px;
     font-family: sans-serif;
@@ -102,14 +106,15 @@ label ,input ,textarea{
     padding: 8px;
 }
 
-label{
+label {
     font-size: 20px;
     font-weight: bold;
 }
 
-#btnlogin,#btnregister{
-    height:50px;
-    width:270px;
+#btnlogin,
+#btnregister {
+    height: 50px;
+    width: 270px;
     margin-left: 6px;
     margin-right: 8px;
     margin-top: 15px;
@@ -119,11 +124,11 @@ label{
     font-family: sans-serif;
 }
 
-#btnregister{
+#btnregister {
     margin-left: 35px;
 }
 
-#signup{
+#signup {
     color: darkblue;
     font-family: sans-serif;
     font-size: 14px;
@@ -133,28 +138,31 @@ label{
     text-decoration: underline;
 }
 
-#signup:hover{
+#signup:hover {
     color: rgb(39, 57, 88);
 }
 
-.incorrect{
-    color:rgb(165, 7, 7);
+.incorrect {
+    color: rgb(165, 7, 7);
     font-family: sans-serif;
     font-size: 14px;
     margin-top: 6px;
 }
 
-.incorrectregister,.incorrectgreen,.incorrectorange{
-    color:rgb(165, 7, 7);
+.incorrectregister,
+.incorrectgreen,
+.incorrectorange {
+    color: rgb(165, 7, 7);
     font-family: sans-serif;
     font-size: 14px;
     margin-top: 6px;
     margin-left: 20px;
 }
 
-.buttons,.clicked{
-    height :50px;
-    width :150px;
+.buttons,
+.clicked {
+    height: 50px;
+    width: 150px;
     font-size: 20px;
     border-radius: 10px;
     margin-top: 5px;
@@ -165,26 +173,27 @@ label{
     background-color: rgb(136, 185, 62);
 }
 
-.buttons:hover{
-    background-color: rgb(46, 160, 46); 
+.buttons:hover {
+    background-color: rgb(46, 160, 46);
 }
 
-.divmain{
-  display: inline-block;
-  margin: 45px;
+.divmain {
+    display: inline-block;
+    margin: 45px;
 }
 
-.imgsize{
+.imgsize {
     height: 200px;
-    width: 200px; 
+    width: 200px;
 }
 
-.price{
+.price {
     font-size: 25px;
     color: rgb(179, 25, 25);
 }
 
-.seller,.quantity{
+.seller,
+.quantity {
     font-size: 15px;
     font-family: Verdana;
     color: grey;
@@ -192,70 +201,72 @@ label{
     padding-bottom: 5px;
 }
 
-.rating{
- color: rgb(27, 15, 141);
- font-size: 15px;
- cursor: pointer;
- margin-bottom: 10px;
+.rating {
+    color: rgb(27, 15, 141);
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
-.rating:hover{
+.rating:hover {
     color: rgb(76, 76, 231);
 }
 
-.btnaddtocart{
+.btnaddtocart {
     height: 40px;
     width: 150px;
     border-radius: 9px;
     font-size: 18px;
     margin-left: 28px;
-    background: linear-gradient(rgb(248, 248, 78),rgb(250, 191, 80));
+    background: linear-gradient(rgb(248, 248, 78), rgb(250, 191, 80));
 }
 
-.ul{
+.ul {
     list-style: none;
 }
-.txtquantity{
-   margin-top: 5px;
-   text-align: center;
-   font-size: 12px;
-   width: 75%;
+
+.txtquantity {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 12px;
+    width: 75%;
 }
-.red{
+
+.red {
     border: 2px solid rgb(179, 25, 25);
 }
 
-.orange{
+.orange {
     border: 2px solid orangered;
 }
 
-.green{
+.green {
     border: 2px solid green;
 }
 
-.incorrectgreen{
+.incorrectgreen {
     color: green;
 }
 
-.incorrectorange{
+.incorrectorange {
     color: orangered;
 }
 
-thead{
+thead {
     font-weight: bold;
 }
-  
-td{
+
+td {
     text-align: center;
     vertical-align: middle !important;
 }
-  
-thead{
-    background-color:black;
+
+thead {
+    background-color: black;
     color: white;
 }
 
-#exampleModalLongTitle{
+#exampleModalLongTitle {
     /* font-weight: bold !important; */
     font-size: 30px !important;
     text-align: center !important;
@@ -265,38 +276,37 @@ thead{
     text-shadow: 3px 3px 5px rgb(73, 71, 71);
 }
 
-.btn-primary{
-    background-color: rgb(79, 219, 14) !important;   
+.btn-primary {
+    background-color: rgb(79, 219, 14) !important;
     border: 1px solid rgb(79, 219, 14) !important;
     height: 200%;
     width: 30%;
     font-size: 130%;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: rgb(46, 160, 46) !important;
     border: 1px solid rgb(46, 160, 46)!important;
 }
 
-.modal-header{
- background-color: orange !important;
- 
+.modal-header {
+    background-color: orange !important;
 }
 
-.url{
+.url {
     height: 70px;
     width: 70px;
 }
 
-p{
+p {
     font-size: 150%;
     font-weight: bold;
 }
 
-span{
+span {
     font-weight: normal;
 }
 
-.clicked{
-    background-color: rgb(46, 160, 46); 
+.clicked {
+    background-color: rgb(46, 160, 46);
 }
